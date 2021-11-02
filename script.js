@@ -6,11 +6,6 @@ ctx.strokeStyle = 'white'
 ctx.lineWidth = 16
 
 ctx.fillStyle = "white";
-// const render = ([x, y]) => {
-//     ctx.strokeRect(150 + x, 114 + y, 100, 0);
-//     ctx.strokeRect(120 + x, 144 + y, 0, 150);
-//     ctx.strokeRect(280 + x, 144 + y, 0, 150);
-// }
 
 const render = ([x, y]) => {
     ctx.fillRect(16 + 22 + 112 + x, 106 + y, 100, 16);
