@@ -5,10 +5,17 @@ let logoList = [[0, 0]]
 ctx.strokeStyle = 'white'
 ctx.lineWidth = 16
 
+ctx.fillStyle = "white";
+// const render = ([x, y]) => {
+//     ctx.strokeRect(150 + x, 114 + y, 100, 0);
+//     ctx.strokeRect(120 + x, 144 + y, 0, 150);
+//     ctx.strokeRect(280 + x, 144 + y, 0, 150);
+// }
+
 const render = ([x, y]) => {
-    ctx.strokeRect(150 + x, 114 + y, 100, 0);
-    ctx.strokeRect(120 + x, 144 + y, 0, 150);
-    ctx.strokeRect(280 + x, 144 + y, 0, 150);
+    ctx.fillRect(16 + 22 + x, 16 + 22 + (16 + 22 + 150) / 2 - 22-16 + y, 100, 16);
+    ctx.fillRect(0 + x, 16 + 22 + (16 + 22 + 150) / 2 + y, 16, 150);
+    ctx.fillRect(16 + 22 + 100 + 22 + x, 16 + 22 + (16 + 22 + 150) / 2 + y, 16, 150);
 }
 
 render(logoList[0])
