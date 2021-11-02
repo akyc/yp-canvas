@@ -13,9 +13,9 @@ ctx.fillStyle = "white";
 // }
 
 const render = ([x, y]) => {
-    ctx.fillRect(16 + 22 + x, 16 + 22 + (16 + 22 + 150) / 2 - 22-16 + y, 100, 16);
-    ctx.fillRect(0 + x, 16 + 22 + (16 + 22 + 150) / 2 + y, 16, 150);
-    ctx.fillRect(16 + 22 + 100 + 22 + x, 16 + 22 + (16 + 22 + 150) / 2 + y, 16, 150);
+    ctx.fillRect(16 + 22 + 112 + x, 106 + y, 100, 16);
+    ctx.fillRect(112 + x, 16 + 22 + 106 + y, 16, 150);
+    ctx.fillRect(16 + 22 + 100 + 22 + 112 + x, 16 + 22 + 106 + y, 16, 150);
 }
 
 render(logoList[0])
